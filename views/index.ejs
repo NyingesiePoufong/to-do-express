@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>What do you need to do?</title>
+   <link rel="stylesheet" href="todo.css">
+   <link rel="shortcut icon" href="favicon.ico">
+   <link rel="stylesheet" href="font-awesome.min.css">
+ </head>
+
+
+
+ <body>
+<section class="topBlackPart">
+  <form class="" action="/newToDo" method="post">
+    <input type="text" name="item" value="" id="item" placeholder="Track Your Tasks!">
+    <button type="button" name="button" id="addTask">Add Task</button>
+  </form>
+</section>
+<section class="whitePart">
+  <h2>Items In progress</h2>
+  <ul id="list">
+    <% for(var i=0; i<entireUserList.length; i++) {%>
+    <li class="notDone">
+      <span><%= entireUserList[i].item %></span>
+      <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+  <em>Thumb Up When Task Is Completed</em>
+</section>
+<section class="bottomBlack">
+ <p>You have Things <span><%= entireUserList.length%></span> Left To Do</p>
+ <button type="button" name="button" id="clearList">Clear List</button>
+ <button type="button" name="button" id="clearCompleted">Clear Completed</button>
+</section>
+<script src="main.js"></script>
+
+</body>
+</html>
