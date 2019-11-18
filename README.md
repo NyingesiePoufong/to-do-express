@@ -11,7 +11,7 @@ When A User Clicks Thumbs Up It Moves The From Not Done List to the Done List
 
 ***IN-PROGRESS***
 
-![alt-text](https://github.com/NyingesiePoufong/Final-Project-Demo/blob/master/final%20project%20image.png)
+![alt-text](https://github.com/NyingesiePoufong/to-do-express/blob/master/to%20do%20list%20server.png)
 
 ### How it's Made:
 
